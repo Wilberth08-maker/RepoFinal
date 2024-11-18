@@ -4,24 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mí</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Azul claro */
+            color: #004d40; /* Verde oscuro */
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #e0f7fa; /* Verde agua claro */
+            border-bottom: 2px solid #004d40;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            background-color: #ffffff; /* Blanco */
+            border: 1px solid #b2dfdb; /* Verde claro */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            margin: 20px 0;
+            padding: 20px;
+        }
+        .card h2 {
+            color: #00695c; /* Verde oscuro */
+        }
+        .card img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+        .card span {
+            display: block;
+            margin-top: 10px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-    <section>
-        <h1 style="text-align:center;"> Acerca de mí </h1>
-        <h2> Estas son algunas cosas sobre mí: </h2>
-        <span> Hola, me llamo Wilberth y tengo 18 años, soy de Quintana Roo
-            y actualmente estoy estudiando la carrera de Ingeniería Civil, apenas
-            estoy en primer semestre. Me gusta mucho la programación , el ajedrez,
-            el basquetball, las matemáticas, la música y mi comida favorita son 
-            los chiles rellenos.</span>
+    <header>
+        <h1>Acerca de mí</h1>
+    </header>
+    <main>
+        <!-- Sección sobre mí -->
+        <div class="card">
+            <h2>Estas son algunas cosas sobre mí:</h2>
+            <span>
+                Hola, me llamo Wilberth y tengo 18 años. Soy de Quintana Roo y actualmente estoy 
+                estudiando la carrera de Ingeniería Civil. Apenas estoy en primer semestre. 
+                Me gusta mucho la programación, el ajedrez, el basquetball, las matemáticas, 
+                la música y mi comida favorita son los chiles rellenos.
+            </span>
+        </div>
 
-    </section>
-    <section>
-        <h2> QUEEN </h2>
-        <img src="https://th.bing.com/th/id/OIP.1xW-QiBKb_elY481MCZbuwHaLi?rs=1&pid=ImgDetMain" alt="Imagen de Freddy" style="border-radius: 50%; width: 200px; height: 200px">
-
-    </section>
-
-    
+        <!-- Sección sobre Queen -->
+        <div class="card">
+            <h2>Queen</h2>
+            <img src="https://th.bing.com/th/id/OIP.1xW-QiBKb_elY481MCZbuwHaLi?rs=1&pid=ImgDetMain" 
+                 alt="Imagen de Freddy">
+            <span>
+                Queen es mi banda favorita. Su música ha inspirado a millones y sigue siendo un 
+                ícono en la historia de la música. Algunas de mis canciones favoritas incluyen 
+                *Bohemian Rhapsody* y *Love of My Life*.
+            </span>
+        </div>
+    </main>
 </body>
 </html>
