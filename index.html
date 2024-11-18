@@ -3,61 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Pagina WEB</title>
+    <title>Mi Página WEB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Azul claro */
+            color: #004d40; /* Verde oscuro */
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #e0f7fa; /* Verde agua claro */
+            border-bottom: 2px solid #004d40;
+        }
+        header img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            display: block;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            background-color: #ffffff; /* Blanco */
+            border: 1px solid #b2dfdb; /* Verde claro */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            margin: 20px 0;
+            padding: 20px;
+        }
+        .card h3 {
+            color: #00695c; /* Verde oscuro */
+        }
+        .card ul, .card ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        .card a {
+            color: #004d40;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-
     <header>
-        <h1 style="text-align:center;"> Mi Pagina Web</h1>
-        <h2 style="text-align:center;"> Wilberth Adair Martínez Puc</h2>  
-        <img src="./MiFoto.jpeg" alt="Mi foto" style="border-radius: 50%; width: 200px; height: 200px" style="margin: auto; display: block; width: 50%; height:auto">     
-        
+        <h1>Mi Página Web</h1>
+        <h2>Wilberth Adair Martínez Puc</h2>
+        <img src="./MiFoto.jpeg" alt="Mi foto">
     </header>
     <main>
-        
-            <a href="./about.html"> Estas son algunas cosas sobre mí: </a>
-            
-        <section class="seccionGustos">
-            <h3> Gustos: </h3>
+        <div class="card">
+            <a href="./about.html">Estas son algunas cosas sobre mí:</a>
+        </div>
+        <div class="card seccionGustos">
+            <h3>Gustos:</h3>
             <ul>
-                <li> Me gusta la música y mi banda favorita es Queen  </li>
-                <li> Me gusta la programación</li>
-                <li> Me gusta jugar basquetball </li>
-                <li> Me gusta el ajedrez </li>
-                <li> Me gustan las matemáticas </li>
-            </ul>    
-        </section>
-        <section class="seccionPasatiempos">
-            <h3> Pasatiempos: </h3>
-            <ul>
-                <li> Me gusta mucho jugar basquetball </li>
-                <li> Me gusta ver videos de YouTube </li>
-                <li> Me gusta  jugar juegos de movil (Me gusta Brawl stars)</li>
-                <li> Me gustan ver peliculas de drama </li>
+                <li>Me gusta la música y mi banda favorita es Queen</li>
+                <li>Me gusta la programación</li>
+                <li>Me gusta jugar basquetball</li>
+                <li>Me gusta el ajedrez</li>
+                <li>Me gustan las matemáticas</li>
             </ul>
-            
-        </section>
-        <section class="seccionExperiencias">
-            <h3> Experiencias: </h3>
+        </div>
+        <div class="card seccionPasatiempos">
+            <h3>Pasatiempos:</h3>
             <ul>
-                <li> Participe en la Olimpiada Mexicana de Matemáticas </li>
-                <li> Participe en la Olimpiada Mexicana de Informatica </li>
-                <li> Participe en la Olimpiada Mexicana de Física </li>
-                <li> Participe en la fase nacional del FA en la disciplina de Matemáticas</li>
-                <li> Participe en la fase estatal del FA en la disciplina Biología</li>
+                <li>Me gusta mucho jugar basquetball</li>
+                <li>Me gusta ver videos de YouTube</li>
+                <li>Me gusta jugar juegos de móvil (Me gusta Brawl stars)</li>
+                <li>Me gusta ver películas de drama</li>
             </ul>
-        </section>
-        <section class="seccionTop5">
-            <h3> Mi top 5 canciones de Queen: </h3>
+        </div>
+        <div class="card seccionExperiencias">
+            <h3>Experiencias:</h3>
+            <ul>
+                <li>Participé en la Olimpiada Mexicana de Matemáticas</li>
+                <li>Participé en la Olimpiada Mexicana de Informática</li>
+                <li>Participé en la Olimpiada Mexicana de Física</li>
+                <li>Participé en la fase nacional del FA en la disciplina de Matemáticas</li>
+                <li>Participé en la fase estatal del FA en la disciplina Biología</li>
+            </ul>
+        </div>
+        <div class="card seccionTop5">
+            <h3>Mi top 5 canciones de Queen:</h3>
             <ol>
-                <li> Bohemian Rhapsody </li>
-                <li> Love Of My life </li>
-                <li> Don't Stop Me Now </li>
-                <li> We Are The Champions </li>
-                <li> The Show Must Go On</li>
+                <li>Bohemian Rhapsody</li>
+                <li>Love Of My Life</li>
+                <li>Don't Stop Me Now</li>
+                <li>We Are The Champions</li>
+                <li>The Show Must Go On</li>
             </ol>
-        </section>
+        </div>
     </main>
-    
 </body>
 </html>
